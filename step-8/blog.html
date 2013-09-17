@@ -1,0 +1,16 @@
+<div class="span3">
+	<label>Titulo</label>
+	<input ng-model="postNuevo.titulo" class="span12" type="text" />
+	<label>Contenido</label>
+	<textarea ng-model="postNuevo.contenido" class="span12"></textarea>
+	<br><input ng-click="agregar()" class="btn btn-info" type="button" value="Agregar" />
+</div>
+<div class="span9">
+	<div class="input-append">
+		<input ng-model="search.titulo" type="text" />
+		<button class="btn" type="button"><i class="icon-search"></i></button>
+	</div>
+	<div class="well" ng-repeat="post in posts | filter: search">
+		<h2><a href="#/post/{{post.id}}">{{post.titulo}}</a></h2>
+	</div>
+</div>

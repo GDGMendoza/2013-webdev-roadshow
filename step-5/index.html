@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es" ng-app="blog">
+<head>
+    <meta charset="UTF-8">
+    <title>GDGMendoza</title>
+    <link rel="stylesheet" href="../resources/bootstrap.css">
+    <link rel="stylesheet" href="../resources/main.css">
+</head>
+<body ng-controller="BlogCtrl">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3">
+                <label>Titulo</label>
+                <input ng-model="postNuevo.titulo" class="span12" type="text" />
+                <label>Contenido</label>
+                <textarea ng-model="postNuevo.contenido" class="span12"></textarea>
+                <br><input ng-click="agregar()" class="btn btn-info" type="button" value="Agregar" />
+            </div>
+            <div class="span9">
+                <div class="well" ng-repeat="post in posts">
+                    <h2><a>{{post.titulo}}</a></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../resources/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

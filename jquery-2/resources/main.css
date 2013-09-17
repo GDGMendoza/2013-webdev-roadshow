@@ -1,0 +1,5 @@
+body,html{ font-size: 100%; paddiinputng: 0; margin: 0; height: 100%;}
+h1,p,input,label,textarea,.well,.btn, .input-append{margin: 10px !important}
+.input-append input, .input-append .btn{
+	margin: 0px !important;
+}

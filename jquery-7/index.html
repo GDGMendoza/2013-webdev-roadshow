@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GDGMendoza</title>
+    <link rel="stylesheet" href="../resources/bootstrap.css">
+    <link rel="stylesheet" href="../resources/main.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="vista-uno" class="row-fluid">
+            <div class="span3">
+                <label>Titulo</label>
+                <input id="titulo-nuevo" class="span12" type="text" />
+                <label>Contenido</label>
+                <textarea id="contenido-nuevo" class="span12"></textarea>
+                <br><input id="agregar-post" class="btn btn-info" type="button" value="Agregar" />
+            </div>
+            <div id="listado-posts" class="span9">
+                <div class="well post">
+                    <h2><a href=""></a></h2>
+                </div>
+            </div>
+        </div>
+        <div id="detalle-post" class="row-fluid">
+            <div class="well">
+                <legend id="titulo"></legend>
+                <p id="contenido"></p>
+            </div>
+            <a href="" id="volver" class="btn">Volver</a>
+        </div>
+    </div>
+    <script src="../resources/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

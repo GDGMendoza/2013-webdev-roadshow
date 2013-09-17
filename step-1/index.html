@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>GDGMendoza</title>
+    <link rel="stylesheet" href="../resources/bootstrap.css">
+    <link rel="stylesheet" href="../resources/main.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <label>Nombre</label>
+            <input ng-model="tuNombre" type="text" placeholder="Adiviná que va acá..."/>
+            <h1 ng-show="tuNombre">Ola k ase {{tuNombre}}!</h1>
+        </div>
+    </div>
+    <script src="../resources/angular.min.js"></script>
+</body>
+</html>
